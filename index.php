@@ -199,7 +199,7 @@
 url="getdata.php";
 $.ajax({
         url: url,
-        type: "POST",
+        type: "GET",
         data: {ele:ele},
         success: function (msg) {             
          console.log(msg);
