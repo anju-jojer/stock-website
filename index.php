@@ -189,8 +189,7 @@
 
  $( "#stcock_val" ).autocomplete({
   source: 'autocomplete.php',
-  select: showLabel,
-   change: showLabel
+  select: showLabel
  });
  function showLabel(event, ui) {
 
