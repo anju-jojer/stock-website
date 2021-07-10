@@ -1,16 +1,16 @@
 <?php
 require("database/dataaccess.class.php");
 $dao=new DataAccess();
- echo $searchTerm = $_GET['ele'];
+  $searchTerm = $_GET['ele'];
 
 
 
   $fieldArray=array("stock_main_id","name","current_maket_price","market_cap","stockpe","dividend","roce","roe","debitequity","eps","reservers","debit");
-
+$data=array();
 
 
   $query_string="name"." LIKE "."'"."%". $searchTerm."%"."'";
-              
+                   $c=1;
                 $this1= $dao->get($fieldArray,"stock_main",$query_string);
                 $sia=sizeof($this1);
                 if($sia>1)
@@ -32,21 +32,7 @@ $dao=new DataAccess();
 
 
 
-             $myObj->name =  $name;
-            $myObj->current_maket_price = $current_maket_price;
-            $myObj->market_cap = $market_cap;
-            $myObj->stockpe = $stockpe;
-             $myObj->dividend = $dividend;
-            $myObj->roce = $roce;
-            $myObj->roe =  $roe;
-            $myObj->debitequity =  $debitequity;
-
-            $myObj->eps = $eps;
-            $myObj->reservers =  $reservers;
-            $myObj->debit =  $debit;
-            $myJSON = json_encode($myObj);
-            echo $myJSON;
-
+            
 
 
 
