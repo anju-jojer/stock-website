@@ -8,7 +8,7 @@ class DataAccess
 		{
 			//require('database.php');	
 			
-           $this->conkey=mysqli_connect("localhost","root","","stock");
+           $this->conkey=mysqli_connect("remotemysql.com","Faa1yBZ3Xl","WlHp9IsgkJ","Faa1yBZ3Xl");
 			 if(mysqli_errno($this->conkey))
 			 {
 				 die("database error");
