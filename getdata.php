@@ -31,15 +31,15 @@ $data=array();
                    $debit =$this1[$i]['debit'];
 
 
-
-             $myObj->name =$name;
+$myObj= new \stdClass();
+             $myObj->name =  $name;
             $myObj->current_maket_price = $current_maket_price;
             $myObj->market_cap = $market_cap;
             $myObj->stockpe = $stockpe;
              $myObj->dividend = $dividend;
             $myObj->roce = $roce;
             $myObj->roe =  $roe;
-            $myObj->debitequity =$debitequity;
+            $myObj->debitequity =  $debitequity;
 
             $myObj->eps = $eps;
             $myObj->reservers =  $reservers;
