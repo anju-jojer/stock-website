@@ -1,5 +1,4 @@
 <?php
-error_reporting(0);
 require("database/dataaccess.class.php");
 $dao=new DataAccess();
   $searchTerm = $_GET['ele'];
